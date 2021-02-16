@@ -59,7 +59,7 @@ self.addEventListener('fetch', event => {
 self.addEventListener('push', event => {
   log('Push ' + event.data.text());
 
-  const title = 'My PWA!';
+  const title = 'My PWA!!!!';
   const options = {
     body: event.data.text()
   };
