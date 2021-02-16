@@ -207,9 +207,11 @@
   //Sat Jan 09 2021
   function setBadge(badgeCount) {
     console.log('setBadge');
+    alert('setBadge');
     if( "setAppBadge" in navigator && "clearAppBadge" in navigator){
 
       console.log('Badge API enabled');
+      alert('Badge API enabled');
 
       navigator.clearAppBadge().then(() =>{
         console.log('Clear Badgd ');
