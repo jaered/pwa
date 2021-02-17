@@ -213,12 +213,28 @@
       console.log('Badge API enabled');
       //alert('Badge API enabled');
 
+      navigator.clearClientBadge().then(() =>{
+        console.log('Clear client Badgd ');
+      }).catch((error) => {
+        console.log('Clear client Badgd error');
+        //Do something with the error.
+      });
+
       navigator.clearAppBadge().then(() =>{
         console.log('Clear Badgd ');
       }).catch((error) => {
         console.log('Clear Badgd error');
         //Do something with the error.
       });
+
+      navigator.setClientBadge(badgeCount).then(() =>{
+        console.log('Set Client Badgd : ' + badgeCount);
+      })
+      .catch((error) => {
+        console.log('Set client Badgd error');
+        //Do something with the error.
+      });
+    
 
       navigator.setAppBadge(badgeCount).then(() =>{
         console.log('Set Badgd : ' + badgeCount);
