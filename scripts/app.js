@@ -213,12 +213,7 @@
       console.log('Badge API enabled');
       //alert('Badge API enabled');
 
-      navigator.clearClientBadge().then(() =>{
-        console.log('Clear client Badgd ');
-      }).catch((error) => {
-        console.log('Clear client Badgd error');
-        //Do something with the error.
-      });
+     
 
       navigator.clearAppBadge().then(() =>{
         console.log('Clear Badgd ');
