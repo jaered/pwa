@@ -56,7 +56,7 @@ self.addEventListener('fetch', event => {
 
   if ('setAppBadge' in navigator) {
     navigator.setAppBadge(10);
-    console.log('[ServiceWorker] requestCounter  ');
+    console.log('[ServiceWorker] setAppBadge  ');
   }
 });
 
