@@ -208,22 +208,26 @@
   function setBadge(badgeCount) {
     console.log('setBadge');
     //alert('setBadge');
-    if( "setAppBadge" in navigator && "clearAppBadge" in navigator){
 
+    //if( "setAppBadge" in navigator && "clearAppBadge" in navigator){
+    if( navigator.setAppBadge && navigator.clearAppBadge){  
       console.log('Badge API enabled');
       //alert('Badge API enabled');
+    }
 
-     
-
+    //if( "clearAppBadge" in navigator){
+    if (navigator.clearAppBadge) {  
       navigator.clearAppBadge().then(() =>{
         console.log('Clear Badgd ');
       }).catch((error) => {
         console.log('Clear Badgd error');
         //Do something with the error.
       });
-
     
+    }
 
+    //if( "setAppBadge" in navigator){
+    if (navigator.setAppBadge) {
       navigator.setAppBadge(badgeCount).then(() =>{
         console.log('Set Badgd : ' + badgeCount);
       })
