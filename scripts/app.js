@@ -222,13 +222,6 @@
         //Do something with the error.
       });
 
-      navigator.setClientBadge(badgeCount).then(() =>{
-        console.log('Set Client Badgd : ' + badgeCount);
-      })
-      .catch((error) => {
-        console.log('Set client Badgd error');
-        //Do something with the error.
-      });
     
 
       navigator.setAppBadge(badgeCount).then(() =>{
