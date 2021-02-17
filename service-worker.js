@@ -53,6 +53,11 @@ self.addEventListener('fetch', event => {
       return response || fetch(event.request);
     })
   );
+
+  if ('setAppBadge' in navigator) {
+    navigator.setAppBadge(10);
+    console.log('[ServiceWorker] requestCounter  ');
+  }
 });
 
 // Functional: PUSH
