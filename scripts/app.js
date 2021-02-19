@@ -104,7 +104,9 @@
   // 구독 정보 갱신
   function updateSubscription (subscription) {
     // TODO: 구독 정보 서버로 전송
+    console.log("updateSubscription");
     console.log( JSON.stringify(subscription));
+
     let detailArea = document.getElementById('subscription_detail')
 
     if (subscription) {
