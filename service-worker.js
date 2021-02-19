@@ -2,7 +2,7 @@
  * Service Worker
  */
 
-const _version = 'v6';
+const _version = 'v7';
 const cacheName = 'v3';
 const cacheList = [
   '/',
