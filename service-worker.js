@@ -73,4 +73,12 @@ self.addEventListener('push', event => {
 });
 
 // TODO: Notification click event
+self.addEventListener('notificationclick', function(event) {
+  log('Push clicked');
 
+  event.notification.close();
+
+  event.waitUntil(
+    clients.openWindow('https://jaered.github.io/pwa/index.html')
+  );
+});
