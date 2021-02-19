@@ -2,8 +2,8 @@
  * Service Worker
  */
 
-const _version = 'v7';
-const cacheName = 'v3';
+const _version = 'v6';
+const cacheName = 'v4';
 const cacheList = [
   '/',
   '/manifest.json',
