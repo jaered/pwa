@@ -3,7 +3,7 @@
  */
 
 const _version = 'v6';
-const cacheName = 'v4';
+const cacheName = 'v7';
 const cacheList = [
   '/',
   '/manifest.json',
